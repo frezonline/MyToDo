@@ -47,7 +47,7 @@ renderAfterReload();
 
 clickAddBtn.addEventListener("click", () => {
   const textOfNewToDo = document.querySelector("input").value;
-  if (textOfNewToDo === "" || textOfNewToDo === " " ) {
+  if (textOfNewToDo.length < 4) {
     alert("Please, input your task!");
     return;
   }
@@ -58,7 +58,7 @@ clickAddBtn.addEventListener("click", () => {
 enterInput.onkeypress = function click(event) {
   if (event.keyCode === 13 || event.key === 13) {
     const textOfNewToDo = document.querySelector(selectors.inputValue).value;
-    if (textOfNewToDo === "" || textOfNewToDo === " " ) {
+    if (textOfNewToDo.length < 4 ) {
       alert("Please, input your task!");
       return;
     }

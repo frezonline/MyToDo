@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Carter+One&family=Fredoka+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>ToDo List</title>
@@ -20,7 +21,7 @@
     
     <main class="container">
         <div class="input">
-            <input type="text" class="myInput" placeholder="Title...">
+            <input type="text" class="myInput" placeholder="Title..." oninput="validateComments(this)">
             <button class="addBtn">Add</button>
                           
             </div>   
@@ -38,11 +39,12 @@
                     <li>Read a book</li>
                     <li>Organize office</li> -->
                 </ul>   
+                
     </div>
-    <button class="deleteBtn">Delete All</button>
+    
     </main>    
     <footer>
-        
+        <button class="deleteBtn">Delete All</button>
     </footer>
 
     <script src="script.js"></script>
