@@ -1,0 +1,151 @@
+*{
+  background-color: rgb(25, 32, 32);
+  margin: 0;
+  padding: 0;
+  font-family: 'Carter One', cursive;
+  
+  
+ }
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.input {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.myInput {
+  width: calc(100% - 100px);
+  padding: 9px;
+  font-size: 16px;
+  border: solid white 5px;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.myUL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+li {
+  margin-top: 10px;
+  width: 585px;
+  background-color: white;
+  padding-left: 9px;
+  font-size: 16px;
+  cursor: pointer;
+  border: solid 1px black;
+  padding: 12px 10px 12px 10px;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 15px;
+}
+
+li:hover {
+  background: grey;
+}
+
+li.checked {
+  background: dimgrey;
+  color: white;
+  text-decoration: line-through black;
+}
+
+li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: -24px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+span.close {
+  position: relative;
+  float: right;
+  font-weight: bold;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  padding: 1px;
+  color: black;
+  transition-duration: 1s;
+}
+
+
+.close:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+  
+}
+
+.addBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1px;
+  width: 100px;
+  height: 52.5px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: white;
+  color: rgb(25, 32, 32);
+  float: right;
+  text-align: center;
+  font-size: 21.6px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 12px;
+  border: none;
+} 
+
+.deleteBtn {
+  /* position: sticky; */
+  margin: 5px;
+  position: relative;
+  font-size: 16px;
+  left: 50px;
+  padding: 10px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+@media only screen and (max-device-width: 748px) {
+  li{
+    width: auto;
+    min-width: 300px;
+  }
+}
